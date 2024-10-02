@@ -1,9 +1,10 @@
 body {
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
+    background-image: url("./images/simon-berger-boyXZfqpwpU-unsplash.jpg");
 }
 
 h2 {
-    text-align: left;
+    
 }
 
