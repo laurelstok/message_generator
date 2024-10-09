@@ -5,48 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Generator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body class="setup_page">
     <header>
         <h1 id="title">Make your own Egyptian Mythology</h1>
     </header>
     <main>
-        <div id="gods">
+        <div class="pyramids">
+
+        </div>
+        <div id="gods" class="gods">
             <h2>Choose your god or goddess</h2>
-        <form action="index.html" id="message_form">
+        <form action="story.html" method="GET">
             <div class="godOrGoddess">
-                <input type="radio" id="isis" name="isis" value="isis">
+                <input type="radio"  name="godOrGoddess" id="isis" value="Isis">
                 <label for="isis">Isis</label><br>
-                <input type="radio" name="godOrGoddess" id="horus" value="horus">
+                <input type="radio" name="godOrGoddess" id="horus" value="Horus">
                 <label for="horus">Horus</label><br>
-                <input type="radio" name="godOrGoddess" id="bastet" value="bastet">
+                <input type="radio" name="godOrGoddess" id="bastet" value="Bastet">
                 <label for="bastet">Bastet</label><br>
-                <input type="radio" name="godOrGoddess" id="ra" value="ra">
+                <input type="radio" name="godOrGoddess" id="ra" value="Ra">
                 <label for="ra">Ra</label><br>
-                <input type="radio" name="godOrGoddess" id="set" value="set">
+                <input type="radio" name="godOrGoddess" id="set" value="Set">
                 <label for="set">Set</label>
             </div>
-            <div class="location">
+            <div class="region">
                 <h2>Choose your location</h2>
-                <input type="radio" id="riverBed" name="riverBed" value="riverBed">
-                <label for="riverBed">River Bed</label><br>
-                <input type="radio" id="desert" name="desert" value="desert">
-                <label for="desert">Desert</label><br>
-                <input type="radio" name="temple" id="temple">
-                <label for="temple">Temple</label>
+                <label for="region">Please select only one</label>
+                <select name="region" id="region">
+                    <option value="desert">Desert</option>
+                    <option value="riverBed">Nile River Bed</option>
+                    <option value="temple">A small Temple</option>
+                    <option value="palace">Within the Royal Palace</option>
+                </select>
             </div>
             <div class="hero">
                 <h2>Choose your hero</h2>
-                <input type="radio" id="scribe" name="scribe" value="scribe">
-                <label for="scribe">A humble Scribe</label><br>
-                <input type="radio" id="queen" name="queen" value="queen">
-                <label for="queen">The Queen of Kemet</label><br>
-                <input type="radio" id="farmer" name="farmer" value="farmer">
-                <label for="farmer">A hard-working Farmer</label><br>
-                <input type="radio" id="princess" name="princess" value="princess">
-                <label for="princess">Second daughter of the Queen of Kemet</label>
-
-            </div>
+                <label for="hero">Please select only one</label>
+                <select name="hero" id="hero">Please select only one
+                    <option value="scribe">A humble scribe</option>
+                    <option value="queen">The Queen of Kemet</option>
+                    <option value="farmer">A lowly farmer</option>
+                    <option value="princess">The second eldest princess</option>
+                </select>
+                   <button id="sbm-btn" type="submit">Submit</button>
         </form>
         </div>
     </main>

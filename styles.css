@@ -1,10 +1,43 @@
 body {
     text-align: left;
     font-family: sans-serif;
-    background-image: url("./images/simon-berger-boyXZfqpwpU-unsplash.jpg");
+    justify-content: center;
+    color: brown;
+    display: block;
+    text-align: center;
 }
 
+h1 {
+    text-align: center;  
+    display: block;
+}
 h2 {
-    
+    background-color: rgb(222, 184, 135);
+    text-align: center;
 }
 
+header {
+    text-align: center;
+    color: darkblue;
+    background-color: rgba(222, 184, 135);
+    outline-offset: 15px;
+}
+
+.region {
+    background-color: rgb(255, 288, 196);
+}
+.hero {
+    background-color: rgb(255, 288, 196);
+}
+.tiledBackground {
+    background-image: url(./images/british-library-Z5glwhD3LH8-unsplash.jpg);
+    background-size: cover;
+    height: 300px;
+    border: 2px solid;
+}
+
+.setup_page {
+    background-image: url(./images/jordi-orts-segales-9G7gfPz_6MI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
