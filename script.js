@@ -35,18 +35,6 @@ const storyEnd = ['they wrapped Osiris in linen to become the first mummy.',
 
 let end = storyEnd[getRandNum(storyEnd)];
 
-function createStory() {
-    function getRandNum(array){
-        return Math.floor(Math.random() * array.length);
-    }
-    let start = storyBegin[getRandNum(storyBegin)];
-    let body = storyBody[getRandNum(storyBody)];
-    let end = storyEnd[getRandNum(storyEnd)];
-
-    const fullStory = `${start}, our hero ${hero} Ran into ${godOrGoddess}. ${body} And in response ${end}.`;
-    console.log(fullStory);
-    return fullStory;
-};
 
 function addStory() {
     document.getElementById("story").innerHTML +=
