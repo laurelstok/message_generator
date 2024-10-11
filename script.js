@@ -17,20 +17,20 @@ const storyBegin = ['On an early morning strole',
 
 let start = storyBegin[getRandNum(storyBegin)];
 
-const storyBody = ['Was confronted by an angy herd of Hippopotamouses. That were extra aggressive due to the drought',
-    'Was forced to answer the riddle of the Sphinx.',
-    'Came across an ornate box wedged amongst the trees at the edge of the river Inside were the cut up remains of Osiris.',
-    'Was faced with the Lioness form of the goddess. She was charged with decimating a village and was currently rampaging out of control.',
-    'Was tasked by the god with unifying all of Kemet.'
+const storyBody = ['were confronted by an angy herd of Hippopotami. That were extra aggressive due to the drought.',
+    'were forced to answer the riddle of the Sphinx.',
+    'came across an ornate box wedged amongst the trees at the edge of the river Inside were the cut up remains of Osiris.',
+    'were faced with the Lioness form of the goddess. She was charged with decimating a village and was currently rampaging out of control.',
+    'were tasked with unifying all of Kemet.'
 ];
 
 let body = storyBody[getRandNum(storyBody)];
 
-const storyEnd = ['Was wrapped in linen to become the first mummy.',
-    'Answered her questions three and was granted with tremendous knowledge.',
-    'Called upon the river god Sobek for protection.',
-    'Colored the beer red thus satiating the goddess blood lust and making her drunk.',
-    'Took up the Crook and Flail and gathered up great armies.'
+const storyEnd = ['they wrapped Osiris in linen to become the first mummy.',
+    'answered her questions three and were granted with tremendous knowledge.',
+    'called upon the river god Sobek for protection.',
+    'colored the beer red thus satiating the goddess blood lust and making her drunk.',
+    'took up the Crook and Flail and gathered up great armies.'
 ];
 
 let end = storyEnd[getRandNum(storyEnd)];
@@ -51,6 +51,6 @@ function createStory() {
 function addStory() {
     document.getElementById("story").innerHTML +=
     `<p>
-        ${start}, our hero ${hero} ran into ${godOrGoddess}. ${body} And in response ${end}.
+        ${start} inside the ${region}, our hero the ${hero} was interrupted by ${godOrGoddess}. Together, the ${hero} and ${godOrGoddess}, ${body} And in response, ${end}
     </p>`;
 }
